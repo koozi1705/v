@@ -1,5 +1,6 @@
 <html>
   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style0.css">
     <style>
 
@@ -80,5 +81,15 @@
         overlay.style.display = "none";
       };
     </script>
+	
+	<script>
+  const toggleBtn = document.querySelector(".toggle-btn");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show-nav");
+  });
+</script>
+	
   </body>
 </html>
